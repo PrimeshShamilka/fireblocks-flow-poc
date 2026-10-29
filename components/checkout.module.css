@@ -1,0 +1,456 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 36px 16px 56px;
+  gap: 20px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 17px;
+  font-weight: 700;
+  color: #12141f;
+}
+
+.brandMark {
+  width: 30px;
+  height: 30px;
+  border-radius: 9px;
+  background: #6b73ff;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-weight: 800;
+  font-size: 15px;
+}
+
+.shell {
+  width: 100%;
+  max-width: 440px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #eceff6;
+  border-radius: 24px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  box-shadow: 0 10px 40px rgba(24, 32, 72, 0.07);
+}
+
+.orderCard {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 22px;
+  box-shadow: none;
+  background: #fbfcfe;
+}
+
+.orderLabel {
+  color: #7b8296;
+  font-size: 13px;
+}
+
+.orderAmount {
+  font-size: 22px;
+  font-weight: 700;
+  color: #12141f;
+}
+
+.hero {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.heroText {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.heroIcon {
+  width: 38px;
+  height: 38px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+.heroDefault {
+  background: #eef0ff;
+  color: #6b73ff;
+}
+
+.heroSuccess {
+  background: #e8f7ee;
+  color: #16a34a;
+}
+
+.heroError {
+  background: #fff1f2;
+  color: #e11d48;
+}
+
+.heroTitle {
+  margin: 0;
+  font-size: 19px;
+  font-weight: 650;
+  color: #12141f;
+}
+
+.heroSubtitle {
+  margin: 0;
+  color: #7b8296;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.progress {
+  display: flex;
+  gap: 4px;
+}
+
+.progress span {
+  flex: 1;
+  height: 4px;
+  border-radius: 2px;
+}
+
+.progressDone {
+  background: #6b73ff;
+}
+
+.progressTodo {
+  background: #eceff6;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 12px 12px;
+  border-radius: 14px;
+  border: 1px solid transparent;
+  background: transparent;
+  color: #12141f;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.listItem:hover:not(:disabled) {
+  background: #f3f4f9;
+}
+
+.listItem:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.listItemActive {
+  background: #f3f4f9;
+  border-color: #dfe3f5;
+}
+
+.listItemText {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+}
+
+.listItemTitle {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.listItemSub {
+  color: #7b8296;
+  font-size: 12px;
+}
+
+.walletIcon {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  object-fit: cover;
+  background: #f3f4f9;
+  flex-shrink: 0;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #eef0ff;
+  color: #6b73ff;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.sectionLabel {
+  color: #7b8296;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0 4px;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chip {
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid #e3e7f1;
+  background: #fff;
+  color: #12141f;
+  font: inherit;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.chip:hover {
+  background: #f3f4f9;
+}
+
+.chipActive {
+  border-color: #6b73ff;
+  background: #eef0ff;
+  color: #4a52e0;
+}
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px;
+  border-radius: 16px;
+  background: #f8f9fc;
+  border: 1px solid #eceff6;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  font-size: 14px;
+}
+
+.rowLabel {
+  color: #7b8296;
+}
+
+.rowValue {
+  text-align: right;
+  word-break: break-all;
+  color: #12141f;
+  font-weight: 500;
+}
+
+.mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 13px;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.button {
+  width: 100%;
+  padding: 15px 16px;
+  border-radius: 14px;
+  border: 0;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  background: #6b73ff;
+  color: #fff;
+}
+
+.button:hover:not(:disabled) {
+  background: #5a63f2;
+}
+
+.button:disabled {
+  background: #c9ceff;
+  cursor: not-allowed;
+}
+
+.buttonSecondary {
+  background: #f1f3f9;
+  color: #12141f;
+}
+
+.buttonSecondary:hover:not(:disabled) {
+  background: #e7eaf4;
+}
+
+.buttonGhost {
+  background: transparent;
+  color: #7b8296;
+}
+
+.buttonGhost:hover:not(:disabled) {
+  background: #f3f4f9;
+}
+
+.error {
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: #fff1f2;
+  border: 1px solid #fecdd3;
+  color: #be123c;
+  font-size: 14px;
+  line-height: 1.4;
+  word-break: break-word;
+}
+
+.notice {
+  color: #7b8296;
+  font-size: 14px;
+  text-align: center;
+  margin: 8px 0;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #9aa1b5;
+}
+
+.stepDone {
+  color: #16a34a;
+}
+
+.stepActive {
+  color: #12141f;
+  font-weight: 600;
+}
+
+.stepDot {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  border: 1.5px solid currentColor;
+  flex-shrink: 0;
+}
+
+.link {
+  color: #4a52e0;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.historyTitle {
+  margin: 0;
+  font-size: 16px;
+  color: #12141f;
+}
+
+.badge {
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.badgeCompleted {
+  background: #e8f7ee;
+  color: #15803d;
+}
+
+.badgeFailed {
+  background: #fff1f2;
+  color: #be123c;
+}
+
+.badgePending {
+  background: #fff7e0;
+  color: #a16207;
+}
+
+.historyDetails {
+  border: 1px solid #eceff6;
+  border-radius: 14px;
+  background: #fff;
+  padding: 12px 14px;
+}
+
+.historyDetails summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.historyDetails summary::-webkit-details-marker {
+  display: none;
+}
+
+.historyBody {
+  margin-top: 12px;
+}
+
+.footnote {
+  color: #9aa1b5;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+  padding: 0 12px;
+}
+
+.spin {
+  animation: kast-spin 1s linear infinite;
+}
+
+@keyframes kast-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

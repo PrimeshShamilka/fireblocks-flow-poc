@@ -1,0 +1,27 @@
+{
+  "name": "kast-fireblocks-poc",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@dynamic-labs-sdk/client": "^1.41.0",
+    "@dynamic-labs-sdk/evm": "^1.41.0",
+    "@dynamic-labs-sdk/solana": "^1.41.0",
+    "@fireblocks/ts-sdk": "^35.0.0",
+    "next": "^15.1.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "server-only": "^0.0.1",
+    "viem": "^2.57.7"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "typescript": "^5.4.0"
+  }
+}
